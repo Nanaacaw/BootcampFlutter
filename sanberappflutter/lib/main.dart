@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:sanberappflutter/Tugas10/Home_screen.dart';
 import 'package:sanberappflutter/Tugas10/Login_screen.dart';
-import 'package:sanberappflutter/Tugas9/Telegram.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,10 +14,11 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
+        primarySwatch: Colors.green,
+        visualDensity: VisualDensity.adaptivePlatformDensity,
+        // useMaterial3: true,
       ),
-      home: HomeScreen(),
+      home: LoginScreen(),
     );
   }
 }

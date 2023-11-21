@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sanberappflutter/Tugas11/mainHome_page.dart';
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({super.key});
@@ -80,7 +81,12 @@ class LoginScreen extends StatelessWidget {
                   borderRadius: BorderRadius.circular(10),
                 ),
                 child: TextButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Route route = MaterialPageRoute(
+                      builder: (context) => MainHome(),
+                    );
+                    Navigator.push(context, route);
+                  },
                   child: const Text(
                     'Login',
                     style: TextStyle(
