@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:sanberappflutter/Tugas10/Login_screen.dart';
+// import 'package:sanberappflutter/Tugas10/Login_screen.dart';
+import 'package:sanberappflutter/Tugas12/get_data.dart';
+// import 'package:auth_google_email_password/Tugas12/get_data.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,7 +20,7 @@ class MyApp extends StatelessWidget {
         visualDensity: VisualDensity.adaptivePlatformDensity,
         // useMaterial3: true,
       ),
-      home: LoginScreen(),
+      home: GetDataScreen(),
     );
   }
 }
